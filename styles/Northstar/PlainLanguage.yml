@@ -1,0 +1,7 @@
+extends: existence
+message: "Avoid '%s'; explain the action without minimizing the work."
+level: suggestion
+ignorecase: true
+tokens:
+  - simply
+  - obviously
