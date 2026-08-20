@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Northstar Platform Docs',
-  tagline: 'A Docusaurus and Vale documentation playground',
+  tagline: 'A documentation playground built with Docusaurus',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -18,12 +18,15 @@ const config: Config = {
   url: 'https://zhouyaoji.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docusaurus/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'zhouyaoji',
-  projectName: 'docusaurus-vale-playground',
+  projectName: 'docusaurus',
+
+  // Keep generated URLs consistent on GitHub Pages.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
@@ -42,7 +45,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/zhouyaoji/docusaurus-vale-playground/tree/main/',
+            'https://github.com/zhouyaoji/docusaurus/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -51,7 +54,7 @@ const config: Config = {
             xslt: true,
           },
           editUrl:
-            'https://github.com/zhouyaoji/docusaurus-vale-playground/tree/main/',
+            'https://github.com/zhouyaoji/docusaurus/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -84,7 +87,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/zhouyaoji/docusaurus-vale-playground',
+          href: 'https://github.com/zhouyaoji/docusaurus',
           label: 'GitHub',
           position: 'right',
         },
@@ -107,7 +110,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/zhouyaoji/docusaurus-vale-playground',
+              href: 'https://github.com/zhouyaoji/docusaurus',
             },
           ],
         },

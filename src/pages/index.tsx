@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Documentation playground"
-      description="A small fictional documentation site for exploring Docusaurus and Vale.">
+      description="A small fictional documentation site for exploring Docusaurus.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
